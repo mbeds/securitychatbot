@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tech Consultancy HelpBot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #212121;
+            color: #ffffff;
+        }
+
+        #header {
+            background-color: darkblue;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #chatbot-container {
+        
+        }
+
+        #instructions {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #424242;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+      #bp-web-widget-container {
+        height: 500px;
+        width: 850px;
+        margin: auto;
+        flex-grow: 1;
+      }
+      #bp-web-widget-container div {
+        height: 1000%;0
+      }
+        .webchatIframe {
+            position: relative !important;
+            height: 100%;
+            width: 100%;
+        }
+</style>
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <h1>Tech Consultancy HelpBot</h1>
+        <p>Welcome to our Tech Consultancy HelpBot, your virtual assistant for all tech-related queries.</p>
+    </div>
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "d23a4812-c9e9-48b9-b279-ebd5ef9aa6f7",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "d23a4812-c9e9-48b9-b279-ebd5ef9aa6f7",
+                "hideWidget": true,
+          "disableAnimations": false,
+          "closeOnEscape": true,
+          "useSessionStorage": true, 
+          "showConversationsButton": false,
+          "enableTranscriptDownload": false,
+          "showPoweredBy": false,
+          "stylesheet": "https://cdn.botpress.cloud/webchat/v0/themes/shareable.css",
+          "className": "webchatIframe",
+          "containerWidth": "100%25",
+          "layoutWidth": "100%25",  
+          "showCloseButton": false
+        });
+        window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+      </script>
+</div>
+    <!-- Instructions on using the chatbot -->
+
+    <div>
+        <center><h5>Developed by Matthew Beddoes</h5></center>
+    </div>
+</body>
+</html>
