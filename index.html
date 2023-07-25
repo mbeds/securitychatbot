@@ -23,6 +23,14 @@
             padding: 0px;
         }
 
+        
+        #main {
+            
+            background-color: #3d0000;
+            color: #ffffff;
+            text-align: center;
+            padding: 0px;
+        }        }
         #chatbot-container {
 
         }
@@ -115,7 +123,7 @@
         <img src="/600x200.jpg" >
     </div>
 
-<main>
+<div id="main">
         <div class="advert-container">
         <div class="advert-heading">Protect Your Business with Our Security Services</div>
 
@@ -165,6 +173,7 @@
           "layoutWidth": "100%25",  
    "layoutHeight": "800px",  
           "showCloseButton": false
+
         });
         window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
       </script>
