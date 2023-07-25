@@ -47,6 +47,54 @@
         width: 100%;
         
       }
+                .advert-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .advert-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .advert-service {
+            margin-bottom: 15px;
+        }
+
+        .advert-service-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .advert-service-description {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .advert-cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .advert-cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .advert-cta-button:hover {
+            background-color: #0056b3;
+        }
       
 </style>
     
@@ -66,11 +114,38 @@
     <div id="header">
         <img src="/600x200.jpg" >
     </div>
-     <div id="bp-web-widget-container">
-         <h3>This is a t test</>
 
-<script>
-  window.botpressWebChat.init({
+<main>
+        <div class="advert-container">
+        <div class="advert-heading">Protect Your Business with Our Security Services</div>
+
+        <div class="advert-service">
+            <div class="advert-service-title">Testing for Top Exploits</div>
+            <div class="advert-service-description">Identify and address vulnerabilities in your systems with our comprehensive testing for top exploits.</div>
+        </div>
+
+        <div class="advert-service">
+            <div class="advert-service-title">Monthly Retainers</div>
+            <div class="advert-service-description">Stay protected 24/7 with our monthly retainer packages tailored to your business needs.</div>
+        </div>
+
+        <div class="advert-service">
+            <div class="advert-service-title">Threat Intelligence</div>
+            <div class="advert-service-description">Access real-time threat intelligence to proactively defend against cyber threats.</div>
+        </div>
+
+        <div class="advert-service">
+            <div class="advert-service-title">Phishing Testing</div>
+            <div class="advert-service-description">Educate your employees and strengthen your defenses against phishing attacks through our testing and training.</div>
+        </div>
+
+        <div class="advert-cta">
+            <a href="#" class="advert-cta-button">Contact Us for a Free Consultation</a>
+        </div>
+    </div>
+</main>
+     <div id="bp-web-widget-container">
+         <script> window.botpressWebChat.init({
       "composerPlaceholder": "Chat with bot",
       "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
       "botId": "d23a4812-c9e9-48b9-b279-ebd5ef9aa6f7",
